@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Of Cinema</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/lovely-bluebird" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>World Of Cinema</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <!-- Add more navigation links -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="login-container">
+            <div class="login-box">
+                <div class="login-toggle">
+                    <button id="userBtn" class="active">User</button>
+                    <button id="adminBtn">Admin</button>
+                </div>
+                <div id="userLogin" class="login-form active">
+                    <h2>User Login</h2>
+                    <form>
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+                <div id="adminLogin" class="login-form">
+                    <h2>Admin Login</h2>
+                    <form>
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Arnop Singh Durjoy</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    position: relative;
+    background-image: url('movie.jpg');/* Add relative positioning to the body */
+}
+
+.header {
+    font-family: 'Lovely Bluebird', sans-serif;
+    padding: 10px;
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    width: 100%;
+    font-size: 20px;
+    z-index: 1000; /* Ensure header stays on top */
+    text-align: center; /* Center-align header content */
+    transition: background-color 0.3s ease-in-out; /* Add transition effect for background color */
+}
+
+
+.nav {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    padding: 10px 20px; /* Add padding to create the "sticker" effect */
+    transition: background-color 0.3s ease-in-out; /* Add transition effect for background color */
+    
+    border-radius: 5px; /* Add rounded corners */
+    transform: translateY(-50%);
+}
+
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #010101;
+    padding: 5px 10px;
+    border-radius: 15px 15px;
+    background-color: #f9fffe;
+    transition: background-color 0.3s ease-in-out; /* Add transition effect for background color */
+}
+
+.nav ul li a:hover {
+    background-color: rgba(255, 125, 45, 0.842); /* Change background color on hover */
+}
+
+.main-content {
+    margin-top: 60px; /* Adjust for header height */
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 20px; /* Add padding to create the "sticker" effect */
+    color: #000000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.668); /* White background for the "sticker" */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+
+
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Replace 'background-image.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+   
+}
+
+
+
+.login-toggle {
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
+.login-toggle button {
+    flex: 1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+    font-family: 'Lovely Bluebird', sans-serif;
+    transition: background-color 0.3s;
+}
+
+.login-toggle button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.login-form {
+    display: none;
+}
+
+.login-form.active {
+    display: block;
+}
+
+.login-form h2 {
+    margin-bottom: 10px;
+    font-family: 'Lovely Bluebird', sans-serif;
+}
+.login-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Adding opacity to the login box */
+    padding: 20px;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: box-shadow 0.3s ease-in-out; /* Add transition effect for box shadow */
+}
+
+.login-box:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Lovely Bluebird', sans-serif;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #000000;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.562); /* Transparent background */
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out; /* Add transition effect for footer */
+    transform: translateY(100%); /* Initially hide the footer below the page */
+}
+
+body:hover footer {
+    transform: translateY(0);
+}
+
+footer:hover {
+    cursor: pointer; /* Change cursor on hover */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
